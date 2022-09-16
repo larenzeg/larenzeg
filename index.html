@@ -11,7 +11,7 @@
         }
 
         body {
-            background: rgb(125, 198, 205);
+            background: rgb(0, 0, 0);
             color: rgb(45, 45, 45);
             padding: 10px;
             font-family: arial;
@@ -24,8 +24,9 @@
 
         /* navigation menu */
         nav {
-            background: #fefefe
+            background: #968c8c; 
             margin: 0 auto;
+            margin-bottom: 20px;
             display: flex;
             padding: 10px;
         }
@@ -64,7 +65,7 @@
         }
 
         .sidebar-img {
-            width: 200px;
+            width: 300px;
         }
 
         .content {
@@ -85,31 +86,32 @@
 </head>
 
 <body>
-
-    <div>
+    <!-- All content goes here -->
+    <div id="all-contents">
         <nav>
             <h1>Larenze's Cooking Online recipes</h1>
-            <ul>
-                <li>
+            <ul id="nav-ul">
+                <li class="nav-li">
                     <a href="index.html"> Home </a>
                 </li>
-                <li>
+                <li class="nav-li">
                     <a href="portfolio.html"> Portfolio </a>
                 </li>
             </ul>
         </nav>
 
         <main>
-            <!--sidebar img-->
-            <div>
-                <img src="img/ribs.jpeg">
+            <!--sidebar section-->
+            <div class="sidebar">
+                <img class="sidebar-img" src="img/ribs.jpeg">
             </div>
 
             <!--content section-->
-            <div>
+            <div class="content">
                 <h2>Larenze Green</h2>
                 <p> food </p>
-                <div>
+                <!-- Interests section -->
+                <div id="interests">
                     <h3>best foods recipies</h3>
                     <ul>
                         <li>Ribs</li>
