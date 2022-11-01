@@ -24,6 +24,14 @@
                 case 'kennedi':
                     collectable.scale.x = collectable.scale.y = 0.9;
                     break;
+                    case 'grace':
+                case 'carti':
+                    collectable.scale.x = collectable.scale.y = 0.12;
+                    break;
+                    //case 'grace':
+                        case 'liloozie':
+                            collectable.scale.x = collectable.scale.y = 0.12;
+                            break;
                 
                 default:
                     // code
