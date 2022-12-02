@@ -21,7 +21,7 @@
 
 		.board {
 			height: 100vh;
-			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk56NdUA2ANQeGtm1sSpl6nNgv8QdAG4XJqQ&usqp=CAU");
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk56NdUA2ANQeGtm1sSpl6nNgv8QdAG4XJqQ&usqp=CAU ");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -85,6 +85,12 @@
 				// assing postion x 10 bigger
 				positionX = positionX + speed
 				// moving the box
+				if (positionX > boardWidth){
+					speed = speed * -1;	
+				}
+				if (positionX < 0){
+					speed = speed * -1;	
+				}
 				moveBoxTo(positionX) 
 
 			};
@@ -99,8 +105,13 @@
 				points = points + 1
 				changeBoxText(points);
 				
+			if	(speed > 0){
 				speed = speed + 3
-
+			}
+			if (speed < 0){
+				speed = speed - 3
+			}
+                 
 			};
 		})();
 	</script>
